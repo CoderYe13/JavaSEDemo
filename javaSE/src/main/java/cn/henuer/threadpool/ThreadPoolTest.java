@@ -25,6 +25,7 @@ public class ThreadPoolTest {
                     System.out.println(SingletonExcemple7.getInstance().toString());
                 });
             }
+
         } catch (Exception e) {
             e.printStackTrace();
         }finally {

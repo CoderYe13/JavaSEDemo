@@ -1,7 +1,6 @@
 package cn.henuer;
 
 
-import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.UUID;
 
@@ -19,7 +18,5 @@ public class Test {
         linkedList.add(2);
         linkedList.add(3);
         System.out.println(linkedList.toString());
-
-        LinkedHashMap map=new LinkedHashMap();
-    }
+       }
 }
