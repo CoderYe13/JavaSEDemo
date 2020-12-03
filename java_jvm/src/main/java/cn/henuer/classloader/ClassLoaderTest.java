@@ -12,7 +12,7 @@ public class ClassLoaderTest {
         for (URL url:urls){
             System.out.println(url);
         }
-        System.out.println("ExtClassLoader类加载器");
+        System.out.println("ExtClassLoader 类加载器");
         String strings=System.getProperty("java.ext.dirs");
         for (String dir: strings.split(";")){
             System.out.println(dir);
