@@ -5,6 +5,7 @@
     <modules>
         <module>javaSE</module>
         <module>java_jvm</module>
+        <module>java_muti_thread</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
