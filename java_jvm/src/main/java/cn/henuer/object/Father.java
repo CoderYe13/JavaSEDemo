@@ -43,7 +43,12 @@ class Son extends Father{
      *  打印的this.i值其实是0,为什么呢？因为Son.class中 1: invokespecial #1(new Father()),
      *  发生在  5: bipush  30（给i赋值为30），此时的this.i的值是准备阶段赋的值就是0所以第一次打印的是0
      *  第二次打印30其实很好理解就是调用new Son()此时this.i被赋值为30了，
-     *  这里最迷惑人的就是这个this指向的是哪个对象
+     *  这里最迷惑人的就是这个this指向的是哪个对象,多态情况下，Fu f=new Zi();
+     *  调用方法的时候就是
+     *  当使用多态方式调用方法时，首先检查父类中是否有该方法，如果没有，则编译错误；
+     *  如果有，再去调用子类的同名方法。
+     *
+     *  非静态方法复写，编译的时候看父类的，运行的时候找子类的方法
      *          Son.class
      *          0: aload_0
      *          1: invokespecial #1                  // Method cn/henuer/object/Father."<init>":()V
